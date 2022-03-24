@@ -1,0 +1,80 @@
+body {
+  background-color: $Claro;
+  font-family: "KoHo", sans-serif;
+  font-size: 1.3rem;
+}
+.image_full {
+  display: block;
+  margin-bottom: 30px;
+}
+.image_mobile {
+  display: none;
+}
+.acerca {
+  margin: 30px;
+  & img {
+    width: 100%;
+  }
+}
+.texto1 {
+  grid-area: texto1;
+}
+.img1 {
+  grid-area: img1;
+  align-self: center;
+}
+.texto2 {
+  grid-area: texto2;
+}
+.img2 {
+  grid-area: img2;
+  align-self: center;
+}
+.acerca2 {
+  padding: 30px;
+  background-color: $Blanco;
+  & p {
+    justify-self: end;
+  }
+  & img {
+    width: 100%;
+  }
+  & h3 {
+    color: $AzulOscuro;
+    background-color: $AzulClaro;
+    padding: 20px;
+    text-align: center;
+  }
+}
+.tiempo {
+  display: grid;
+  grid-template-areas: "img1 img1 texto1";
+  gap: 30px;
+}
+.habilidad {
+  display: grid;
+  grid-template-areas: "texto2 img2 img2";
+  gap: 30px;
+}
+@media screen and (max-width: 850px) {
+  .image_full {
+    display: none;
+  }
+  .image_mobile {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .acerca {
+    margin: 15px;
+  }
+  .tiempo {
+    grid-template-areas:
+      "img1"
+      "texto1";
+  }
+  .habilidad {
+    grid-template-areas:
+      "img2"
+      "texto2";
+  }
+}

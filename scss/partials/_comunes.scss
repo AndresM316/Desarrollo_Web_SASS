@@ -1,0 +1,52 @@
+h2 {
+  color: $AzulOscuro;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+p {
+  color: $AzulOscuro;
+}
+h3 {
+  color: $AzulOscuro;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+h4 {
+  font-size: 1.3rem;
+}
+section {
+  margin: 30px;
+  text-align: justify;
+  & h2 {
+    text-align: center;
+  }
+}
+.Principal {
+  background-color: $AzulClaro;
+  margin: 30px;
+  padding: 20px;
+  text-align: center;
+}
+.Titulos {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: $AzulClaro;
+  color: $AzulOscuro;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 850px) {
+  .Principal {
+    margin: 15px;
+    padding: 10px;
+    font-size: larger;
+  }
+  section {
+    margin: 15px;
+    text-align: justify;
+  }
+}

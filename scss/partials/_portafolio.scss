@@ -1,0 +1,116 @@
+.ContPort {
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  gap: 3%;
+  & p {
+    text-align: justify;
+  }
+  & h3 {
+    margin-bottom: 0;
+  }
+}
+.mascotas {
+  grid-area: mascotas;
+  justify-content: center;
+  background-color: $Blanco;
+  padding: 2.5%;
+  border-radius: 15px;
+  &:hover {
+    transform: scale(1.02, 1.02);
+    box-shadow: 0 5px 20px $AzulClaro;
+  }
+  p {
+    color: $AzulOscuro;
+    margin-bottom: 0;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+.Tecnoservicios {
+  grid-area: tecno;
+  justify-content: center;
+  background-color: $Blanco;
+  padding: 2.5%;
+  border-radius: 15px;
+  &:hover {
+    transform: scale(1.02, 1.02);
+    box-shadow: 0 5px 20px $AzulClaro;
+  }
+  p {
+    color: $AzulOscuro;
+    margin-bottom: 0;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+.funimation {
+  grid-area: funi;
+  justify-content: center;
+  background-color: $Blanco;
+  padding: 2.5%;
+  border-radius: 15px;
+  &:hover {
+    transform: scale(1.02, 1.02);
+    box-shadow: 0 5px 20px $AzulClaro;
+  }
+  p {
+    color: $AzulOscuro;
+    margin-bottom: 0;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .ContPort {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .mascotas {
+    width: 100%;
+    padding: 4%;
+    img {
+      width: 50%;
+    }
+  }
+  .Tecnoservicios {
+    width: 100%;
+    padding: 4%;
+    img {
+      width: 50%;
+    }
+  }
+  .funimation {
+    width: 100%;
+    padding: 4%;
+    img {
+      width: 50%;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .mascotas {
+    padding: 5%;
+    img {
+      width: 100%;
+    }
+  }
+  .Tecnoservicios {
+    padding: 5%;
+    img {
+      width: 100%;
+    }
+  }
+  .funimation {
+    padding: 5%;
+    img {
+      width: 100%;
+    }
+  }
+}

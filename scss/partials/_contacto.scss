@@ -1,0 +1,29 @@
+.datos {
+  padding: 30px;
+  background-color: $Blanco;
+  color: $AzulOscuro;
+}
+.BotonForm {
+  background-color: $AzulMedio;
+  border-color: $AzulMedio;
+  &:hover {
+    background-color: $Claro;
+    border-color: $AzulOscuro;
+    color: $AzulOscuro;
+  }
+}
+.BotonForm2 {
+  background-color: $AzulClaro;
+  border-color: $AzulClaro;
+  &:hover {
+    background-color: $AzulOscuro;
+    border-color: $AzulOscuro;
+  }
+}
+@media screen and (max-width: 850px) {
+  .datos h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+}

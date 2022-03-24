@@ -1,0 +1,70 @@
+.ContTray {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  gap: 50px;
+  margin: 40px;
+  & img {
+    width: 70%;
+  }
+  & h3 {
+    margin-bottom: 0;
+  }
+}
+.Educativa {
+  grid-area: edu;
+  width: 100%;
+  background-color: $Blanco;
+  padding: 30px;
+  border-radius: 15px;
+  &:hover {
+    transform: scale(1.02, 1.02);
+    box-shadow: 0 5px 20px $AzulClaro;
+  }
+  p {
+    color: $AzulOscuro;
+    text-align: justify;
+  }
+}
+.Laboral {
+  grid-area: lab;
+  width: 100%;
+  background-color: $Blanco;
+  padding: 30px;
+  border-radius: 15px;
+  &:hover {
+    transform: scale(1.02, 1.02);
+    box-shadow: 0 5px 20px $AzulClaro;
+  }
+  & p {
+    color: $AzulOscuro;
+    text-align: justify;
+  }
+}
+.Botones {
+  margin: 20px;
+  padding: 10px;
+  background-color: $AzulOscuro;
+  color: $Blanco;
+  border-radius: 10px;
+}
+.trayect {
+  text-align: center;
+  img {
+    width: 350px;
+  }
+  p {
+    text-align: justify;
+    margin-top: 30px;
+  }
+}
+.ImgTray {
+  background-color: $Blanco;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 850px) {
+  .ContTray {
+    flex-wrap: wrap;
+  }
+}

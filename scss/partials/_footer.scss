@@ -1,0 +1,17 @@
+footer {
+  background-color: $AzulOscuro;
+  color: $Blanco;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .Iconos {
+    & img {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  .Logo:hover {
+    transform: scale(1.2, 1.2);
+  }
+}
