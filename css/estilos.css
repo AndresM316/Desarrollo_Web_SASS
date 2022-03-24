@@ -85,7 +85,7 @@ a {
         text-decoration: none;
         text-align: center;
         padding: 20px;
-        color: #fafafa;
+        color: #ffffff;
         font-size: 1.3rem;
         font-weight: bolder; }
         .contenedor .nav .BoxNav .Menu:hover {
@@ -149,7 +149,7 @@ body {
 
 .acerca2 {
   padding: 30px;
-  background-color: #fafafa; }
+  background-color: #ffffff; }
   .acerca2 p {
     justify-self: end; }
   .acerca2 img {
@@ -185,7 +185,7 @@ body {
 
 footer {
   background-color: #051367;
-  color: #fafafa;
+  color: #ffffff;
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -209,7 +209,7 @@ footer {
 .mascotas {
   grid-area: mascotas;
   justify-content: center;
-  background-color: #fafafa;
+  background-color: #ffffff;
   padding: 2.5%;
   border-radius: 15px; }
   .mascotas:hover {
@@ -225,7 +225,7 @@ footer {
 .Tecnoservicios {
   grid-area: tecno;
   justify-content: center;
-  background-color: #fafafa;
+  background-color: #ffffff;
   padding: 2.5%;
   border-radius: 15px; }
   .Tecnoservicios:hover {
@@ -241,7 +241,7 @@ footer {
 .funimation {
   grid-area: funi;
   justify-content: center;
-  background-color: #fafafa;
+  background-color: #ffffff;
   padding: 2.5%;
   border-radius: 15px; }
   .funimation:hover {
@@ -302,7 +302,7 @@ footer {
 .Educativa {
   grid-area: edu;
   width: 100%;
-  background-color: #fafafa;
+  background-color: #ffffff;
   padding: 30px;
   border-radius: 15px; }
   .Educativa:hover {
@@ -315,7 +315,7 @@ footer {
 .Laboral {
   grid-area: lab;
   width: 100%;
-  background-color: #fafafa;
+  background-color: #ffffff;
   padding: 30px;
   border-radius: 15px; }
   .Laboral:hover {
@@ -329,7 +329,7 @@ footer {
   margin: 20px;
   padding: 10px;
   background-color: #051367;
-  color: #fafafa;
+  color: #ffffff;
   border-radius: 10px; }
 
 .trayect {
@@ -341,7 +341,7 @@ footer {
     margin-top: 30px; }
 
 .ImgTray {
-  background-color: #fafafa;
+  background-color: #ffffff;
   border-radius: 15px; }
 
 @media screen and (max-width: 850px) {
@@ -350,7 +350,7 @@ footer {
 
 .datos {
   padding: 30px;
-  background-color: #fafafa;
+  background-color: #ffffff;
   color: #051367; }
 
 .BotonForm {
