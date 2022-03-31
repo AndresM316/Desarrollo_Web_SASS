@@ -1,5 +1,5 @@
 .ContPort {
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   display: flex;
   gap: 3%;
@@ -10,62 +10,44 @@
     margin-bottom: 0;
   }
 }
-.mascotas {
-  grid-area: mascotas;
+@mixin CardsPort($color) {
   justify-content: center;
+  width: 30%;
   background-color: $Blanco;
   padding: 2.5%;
   border-radius: 15px;
   &:hover {
     transform: scale(1.02, 1.02);
-    box-shadow: 0 5px 20px $AzulClaro;
+    box-shadow: 0 5px 20px $color;
+  }
+  .TituPort {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: $color;
+    border-radius: 10px;
+    h3 {
+      color: $Blanco;
+    }
   }
   p {
-    color: $AzulOscuro;
+    color: $color;
     margin-bottom: 0;
+    text-align: justify;
   }
   img {
     width: 100%;
     margin-bottom: 5px;
   }
+}
+.mascotas {
+  @include CardsPort(#663399);
 }
 .Tecnoservicios {
-  grid-area: tecno;
-  justify-content: center;
-  background-color: $Blanco;
-  padding: 2.5%;
-  border-radius: 15px;
-  &:hover {
-    transform: scale(1.02, 1.02);
-    box-shadow: 0 5px 20px $AzulClaro;
-  }
-  p {
-    color: $AzulOscuro;
-    margin-bottom: 0;
-  }
-  img {
-    width: 100%;
-    margin-bottom: 5px;
-  }
+  @include CardsPort(#003366);
 }
 .funimation {
-  grid-area: funi;
-  justify-content: center;
-  background-color: $Blanco;
-  padding: 2.5%;
-  border-radius: 15px;
-  &:hover {
-    transform: scale(1.02, 1.02);
-    box-shadow: 0 5px 20px $AzulClaro;
-  }
-  p {
-    color: $AzulOscuro;
-    margin-bottom: 0;
-  }
-  img {
-    width: 100%;
-    margin-bottom: 5px;
-  }
+  @include CardsPort(#4719a3);
 }
 @media screen and (max-width: 850px) {
   .ContPort {
@@ -97,18 +79,21 @@
 @media screen and (max-width: 600px) {
   .mascotas {
     padding: 5%;
+    margin-bottom: 15px;
     img {
       width: 100%;
     }
   }
   .Tecnoservicios {
     padding: 5%;
+    margin-bottom: 15px;
     img {
       width: 100%;
     }
   }
   .funimation {
     padding: 5%;
+    margin-bottom: 15px;
     img {
       width: 100%;
     }

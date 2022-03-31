@@ -1,4 +1,4 @@
-h2 {
+h1 {
   color: $AzulOscuro;
   font-weight: bold;
   font-size: 2rem;
@@ -6,13 +6,25 @@ h2 {
 }
 p {
   color: $AzulOscuro;
+  font-weight: 300;
+}
+h2 {
+  color: $AzulOscuro;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.Subtitulo {
+  font-weight: 400;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 h3 {
   color: $AzulOscuro;
   font-weight: bold;
   text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 30px;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
 }
 h4 {
   font-size: 1.3rem;
@@ -26,7 +38,8 @@ section {
 }
 .Principal {
   background-color: $AzulClaro;
-  margin: 30px;
+  margin-left: 0;
+  margin-right: 0;
   padding: 20px;
   text-align: center;
 }
@@ -38,15 +51,52 @@ section {
   color: $AzulOscuro;
   border-radius: 10px;
 }
+.Tarjeta {
+  justify-content: center;
+  background-color: $Blanco;
+  padding: 2.5%;
+  border-radius: 15px;
+  &:hover {
+    transform: scale(1.02, 1.02);
+    box-shadow: 0 5px 20px $AzulClaro;
+  }
+  p {
+    color: $AzulOscuro;
+    margin-bottom: 0;
+    text-align: justify;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
 
 @media screen and (max-width: 850px) {
   .Principal {
-    margin: 15px;
     padding: 10px;
     font-size: larger;
+  }
+  h2{
+    font-size: 1.35rem;
   }
   section {
     margin: 15px;
     text-align: justify;
+  }
+  .Tarjeta {
+    width: 100%;
+    padding: 4%;
+    img {
+      width: 50%;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .Tarjeta {
+    padding: 5%;
+    margin-bottom: 15px;
+    img {
+      width: 100%;
+    }
   }
 }

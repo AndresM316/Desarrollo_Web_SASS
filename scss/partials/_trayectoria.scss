@@ -1,8 +1,9 @@
 .ContTray {
+  display: grid;
+  grid-template-columns: 50% 50%;
   justify-content: center;
   text-align: center;
-  display: flex;
-  gap: 50px;
+  gap: 40px;
   margin: 40px;
   & img {
     width: 70%;
@@ -12,34 +13,10 @@
   }
 }
 .Educativa {
-  grid-area: edu;
-  width: 100%;
-  background-color: $Blanco;
-  padding: 30px;
-  border-radius: 15px;
-  &:hover {
-    transform: scale(1.02, 1.02);
-    box-shadow: 0 5px 20px $AzulClaro;
-  }
-  p {
-    color: $AzulOscuro;
-    text-align: justify;
-  }
+  @extend .Tarjeta;
 }
 .Laboral {
-  grid-area: lab;
-  width: 100%;
-  background-color: $Blanco;
-  padding: 30px;
-  border-radius: 15px;
-  &:hover {
-    transform: scale(1.02, 1.02);
-    box-shadow: 0 5px 20px $AzulClaro;
-  }
-  & p {
-    color: $AzulOscuro;
-    text-align: justify;
-  }
+  @extend .Tarjeta;
 }
 .Botones {
   margin: 20px;
@@ -58,13 +35,85 @@
     margin-top: 30px;
   }
 }
+.TrayCont {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+  gap: 50px;
+  margin: 40px;
+  & img {
+    width: 70%;
+  }
+  & h3 {
+    margin-bottom: 0;
+  }
+}
 .ImgTray {
   background-color: $Blanco;
   border-radius: 15px;
 }
-
+.CardsTray {
+  display: grid;
+  grid-template-areas:
+    "imag"
+    "subt"
+    "txt";
+  background-color: white;
+  padding: 2.5%;
+  gap: 2.5%;
+  box-shadow: 5px 5px 20px $AzulClaro;
+  .TarjetaTray {
+    grid-area: imag;
+    img {
+      width: 280px;
+    }
+  }
+  .SubTray {
+    grid-area: subt;
+    background-color: $AzulOscuro;
+    color: $Blanco;
+    margin-bottom: 2%;
+    .TituTrab {
+      color: $Blanco;
+      font-weight: 800;
+      margin-top: 2%;
+      margin-bottom: 0;
+    }
+    h4 {
+      font-weight: 400;
+      margin: 0;
+    }
+    h5 {
+      margin-bottom: 2%;
+      font-weight: 300;
+    }
+  }
+  .TextoTray {
+    grid-area: txt;
+    padding: 3%;
+    p {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
 @media screen and (max-width: 850px) {
   .ContTray {
-    flex-wrap: wrap;
+    grid-template-columns: 100%;
+    gap: 20px;
+    margin: 2%;
+  }
+  .TrayCont {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    gap: 30px;
+    margin: 2%;
+    & img {
+      width: 70%;
+    }
+    & h3 {
+      margin-bottom: 0;
+    }
   }
 }

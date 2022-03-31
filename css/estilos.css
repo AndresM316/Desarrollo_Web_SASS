@@ -3,21 +3,33 @@
   padding: 0;
   box-sizing: border-box; }
 
-h2 {
+h1 {
   color: #051367;
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 30px; }
 
 p {
-  color: #051367; }
+  color: #051367;
+  font-weight: 300; }
+
+h2 {
+  color: #051367;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px; }
+
+.Subtitulo {
+  font-weight: 400;
+  margin-left: 5%;
+  margin-right: 5%; }
 
 h3 {
   color: #051367;
   font-weight: bold;
   text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 30px; }
+  font-size: 1.3rem;
+  margin-bottom: 20px; }
 
 h4 {
   font-size: 1.3rem; }
@@ -30,7 +42,8 @@ section {
 
 .Principal {
   background-color: #62bbff;
-  margin: 30px;
+  margin-left: 0;
+  margin-right: 0;
   padding: 20px;
   text-align: center; }
 
@@ -42,14 +55,43 @@ section {
   color: #051367;
   border-radius: 10px; }
 
+.Tarjeta, .Educativa, .Laboral {
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 2.5%;
+  border-radius: 15px; }
+  .Tarjeta:hover, .Educativa:hover, .Laboral:hover {
+    transform: scale(1.02, 1.02);
+    box-shadow: 0 5px 20px #62bbff; }
+  .Tarjeta p, .Educativa p, .Laboral p {
+    color: #051367;
+    margin-bottom: 0;
+    text-align: justify; }
+  .Tarjeta img, .Educativa img, .Laboral img {
+    width: 100%;
+    margin-bottom: 5px; }
+
 @media screen and (max-width: 850px) {
   .Principal {
-    margin: 15px;
     padding: 10px;
     font-size: larger; }
+  h2 {
+    font-size: 1.35rem; }
   section {
     margin: 15px;
-    text-align: justify; } }
+    text-align: justify; }
+  .Tarjeta, .Educativa, .Laboral {
+    width: 100%;
+    padding: 4%; }
+    .Tarjeta img, .Educativa img, .Laboral img {
+      width: 50%; } }
+
+@media screen and (max-width: 600px) {
+  .Tarjeta, .Educativa, .Laboral {
+    padding: 5%;
+    margin-bottom: 15px; }
+    .Tarjeta img, .Educativa img, .Laboral img {
+      width: 100%; } }
 
 a {
   text-decoration: none; }
@@ -118,7 +160,7 @@ a {
 
 body {
   background-color: #dff6ff;
-  font-family: "KoHo", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   font-size: 1.3rem; }
 
 .image_full {
@@ -189,15 +231,20 @@ footer {
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center; }
+  footer .TextoDatos {
+    font-weight: lighter; }
   footer .Iconos img {
+    opacity: 0.7;
     margin-left: 5px;
     margin-right: 5px; }
   footer .Logo:hover {
+    opacity: 1;
     transform: scale(1.2, 1.2); }
 
 .ContPort {
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   display: flex;
   gap: 3%; }
@@ -207,49 +254,76 @@ footer {
     margin-bottom: 0; }
 
 .mascotas {
-  grid-area: mascotas;
   justify-content: center;
+  width: 30%;
   background-color: #ffffff;
   padding: 2.5%;
   border-radius: 15px; }
   .mascotas:hover {
     transform: scale(1.02, 1.02);
-    box-shadow: 0 5px 20px #62bbff; }
+    box-shadow: 0 5px 20px #663399; }
+  .mascotas .TituPort {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #663399;
+    border-radius: 10px; }
+    .mascotas .TituPort h3 {
+      color: #ffffff; }
   .mascotas p {
-    color: #051367;
-    margin-bottom: 0; }
+    color: #663399;
+    margin-bottom: 0;
+    text-align: justify; }
   .mascotas img {
     width: 100%;
     margin-bottom: 5px; }
 
 .Tecnoservicios {
-  grid-area: tecno;
   justify-content: center;
+  width: 30%;
   background-color: #ffffff;
   padding: 2.5%;
   border-radius: 15px; }
   .Tecnoservicios:hover {
     transform: scale(1.02, 1.02);
-    box-shadow: 0 5px 20px #62bbff; }
+    box-shadow: 0 5px 20px #003366; }
+  .Tecnoservicios .TituPort {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #003366;
+    border-radius: 10px; }
+    .Tecnoservicios .TituPort h3 {
+      color: #ffffff; }
   .Tecnoservicios p {
-    color: #051367;
-    margin-bottom: 0; }
+    color: #003366;
+    margin-bottom: 0;
+    text-align: justify; }
   .Tecnoservicios img {
     width: 100%;
     margin-bottom: 5px; }
 
 .funimation {
-  grid-area: funi;
   justify-content: center;
+  width: 30%;
   background-color: #ffffff;
   padding: 2.5%;
   border-radius: 15px; }
   .funimation:hover {
     transform: scale(1.02, 1.02);
-    box-shadow: 0 5px 20px #62bbff; }
+    box-shadow: 0 5px 20px #4719a3; }
+  .funimation .TituPort {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #4719a3;
+    border-radius: 10px; }
+    .funimation .TituPort h3 {
+      color: #ffffff; }
   .funimation p {
-    color: #051367;
-    margin-bottom: 0; }
+    color: #4719a3;
+    margin-bottom: 0;
+    text-align: justify; }
   .funimation img {
     width: 100%;
     margin-bottom: 5px; }
@@ -276,54 +350,32 @@ footer {
 
 @media screen and (max-width: 600px) {
   .mascotas {
-    padding: 5%; }
+    padding: 5%;
+    margin-bottom: 15px; }
     .mascotas img {
       width: 100%; }
   .Tecnoservicios {
-    padding: 5%; }
+    padding: 5%;
+    margin-bottom: 15px; }
     .Tecnoservicios img {
       width: 100%; }
   .funimation {
-    padding: 5%; }
+    padding: 5%;
+    margin-bottom: 15px; }
     .funimation img {
       width: 100%; } }
 
 .ContTray {
+  display: grid;
+  grid-template-columns: 50% 50%;
   justify-content: center;
   text-align: center;
-  display: flex;
-  gap: 50px;
+  gap: 40px;
   margin: 40px; }
   .ContTray img {
     width: 70%; }
   .ContTray h3 {
     margin-bottom: 0; }
-
-.Educativa {
-  grid-area: edu;
-  width: 100%;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 15px; }
-  .Educativa:hover {
-    transform: scale(1.02, 1.02);
-    box-shadow: 0 5px 20px #62bbff; }
-  .Educativa p {
-    color: #051367;
-    text-align: justify; }
-
-.Laboral {
-  grid-area: lab;
-  width: 100%;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 15px; }
-  .Laboral:hover {
-    transform: scale(1.02, 1.02);
-    box-shadow: 0 5px 20px #62bbff; }
-  .Laboral p {
-    color: #051367;
-    text-align: justify; }
 
 .Botones {
   margin: 20px;
@@ -340,13 +392,70 @@ footer {
     text-align: justify;
     margin-top: 30px; }
 
+.TrayCont {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+  gap: 50px;
+  margin: 40px; }
+  .TrayCont img {
+    width: 70%; }
+  .TrayCont h3 {
+    margin-bottom: 0; }
+
 .ImgTray {
   background-color: #ffffff;
   border-radius: 15px; }
 
+.CardsTray {
+  display: grid;
+  grid-template-areas: "imag" "subt" "txt";
+  background-color: white;
+  padding: 2.5%;
+  gap: 2.5%;
+  box-shadow: 5px 5px 20px #62bbff; }
+  .CardsTray .TarjetaTray {
+    grid-area: imag; }
+    .CardsTray .TarjetaTray img {
+      width: 280px; }
+  .CardsTray .SubTray {
+    grid-area: subt;
+    background-color: #051367;
+    color: #ffffff;
+    margin-bottom: 2%; }
+    .CardsTray .SubTray .TituTrab {
+      color: #ffffff;
+      font-weight: 800;
+      margin-top: 2%;
+      margin-bottom: 0; }
+    .CardsTray .SubTray h4 {
+      font-weight: 400;
+      margin: 0; }
+    .CardsTray .SubTray h5 {
+      margin-bottom: 2%;
+      font-weight: 300; }
+  .CardsTray .TextoTray {
+    grid-area: txt;
+    padding: 3%; }
+    .CardsTray .TextoTray p {
+      margin-top: 0;
+      margin-bottom: 10px; }
+
 @media screen and (max-width: 850px) {
   .ContTray {
-    flex-wrap: wrap; } }
+    grid-template-columns: 100%;
+    gap: 20px;
+    margin: 2%; }
+  .TrayCont {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    gap: 30px;
+    margin: 2%; }
+    .TrayCont img {
+      width: 70%; }
+    .TrayCont h3 {
+      margin-bottom: 0; } }
 
 .datos {
   padding: 30px;
