@@ -54,7 +54,7 @@ section {
 .Tarjeta {
   justify-content: center;
   background-color: $Blanco;
-  padding: 2.5%;
+  padding: 5%;
   border-radius: 15px;
   &:hover {
     transform: scale(1.02, 1.02);
@@ -69,6 +69,9 @@ section {
     width: 100%;
     margin-bottom: 5px;
   }
+}
+span{
+  font-weight: 800;
 }
 
 @media screen and (max-width: 850px) {

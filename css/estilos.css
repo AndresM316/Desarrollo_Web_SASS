@@ -58,7 +58,7 @@ section {
 .Tarjeta, .Educativa, .Laboral {
   justify-content: center;
   background-color: #ffffff;
-  padding: 2.5%;
+  padding: 5%;
   border-radius: 15px; }
   .Tarjeta:hover, .Educativa:hover, .Laboral:hover {
     transform: scale(1.02, 1.02);
@@ -70,6 +70,9 @@ section {
   .Tarjeta img, .Educativa img, .Laboral img {
     width: 100%;
     margin-bottom: 5px; }
+
+span {
+  font-weight: 800; }
 
 @media screen and (max-width: 850px) {
   .Principal {
@@ -194,8 +197,6 @@ body {
   background-color: #ffffff; }
   .acerca2 p {
     justify-self: end; }
-  .acerca2 img {
-    width: 100%; }
   .acerca2 h3 {
     color: #051367;
     background-color: #62bbff;
@@ -379,7 +380,8 @@ footer {
 
 .Botones {
   margin: 20px;
-  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   background-color: #051367;
   color: #ffffff;
   border-radius: 10px; }
@@ -408,12 +410,22 @@ footer {
   border-radius: 15px; }
 
 .CardsTray {
-  display: grid;
-  grid-template-areas: "imag" "subt" "txt";
-  background-color: white;
+  display: flex;
+  flex-flow: column;
+  background-color: #ffffff;
+  height: 300px;
   padding: 2.5%;
   gap: 2.5%;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
   box-shadow: 5px 5px 20px #62bbff; }
+  .CardsTray p {
+    opacity: 0; }
+  .CardsTray:hover {
+    height: auto; }
+    .CardsTray:hover p {
+      opacity: 1;
+      transition: 0.3s ease-in-out; }
   .CardsTray .TarjetaTray {
     grid-area: imag; }
     .CardsTray .TarjetaTray img {
@@ -421,8 +433,7 @@ footer {
   .CardsTray .SubTray {
     grid-area: subt;
     background-color: #051367;
-    color: #ffffff;
-    margin-bottom: 2%; }
+    color: #ffffff; }
     .CardsTray .SubTray .TituTrab {
       color: #ffffff;
       font-weight: 800;
@@ -432,13 +443,13 @@ footer {
       font-weight: 400;
       margin: 0; }
     .CardsTray .SubTray h5 {
-      margin-bottom: 2%;
       font-weight: 300; }
   .CardsTray .TextoTray {
     grid-area: txt;
-    padding: 3%; }
+    padding-left: 5px;
+    padding-right: 5px; }
     .CardsTray .TextoTray p {
-      margin-top: 0;
+      margin-top: 10px;
       margin-bottom: 10px; }
 
 @media screen and (max-width: 850px) {

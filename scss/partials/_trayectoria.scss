@@ -20,7 +20,8 @@
 }
 .Botones {
   margin: 20px;
-  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   background-color: $AzulOscuro;
   color: $Blanco;
   border-radius: 10px;
@@ -53,15 +54,25 @@
   border-radius: 15px;
 }
 .CardsTray {
-  display: grid;
-  grid-template-areas:
-    "imag"
-    "subt"
-    "txt";
-  background-color: white;
+  display: flex;
+  flex-flow: column;
+  background-color: $Blanco;
+  height: 300px;
   padding: 2.5%;
   gap: 2.5%;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
   box-shadow: 5px 5px 20px $AzulClaro;
+  p{
+    opacity: 0;
+  }
+  &:hover{
+    height: auto;
+    p{
+      opacity: 1;
+      transition: 0.3s ease-in-out;
+    }
+  }
   .TarjetaTray {
     grid-area: imag;
     img {
@@ -72,7 +83,6 @@
     grid-area: subt;
     background-color: $AzulOscuro;
     color: $Blanco;
-    margin-bottom: 2%;
     .TituTrab {
       color: $Blanco;
       font-weight: 800;
@@ -84,15 +94,15 @@
       margin: 0;
     }
     h5 {
-      margin-bottom: 2%;
       font-weight: 300;
     }
   }
   .TextoTray {
     grid-area: txt;
-    padding: 3%;
+    padding-left: 5px;
+    padding-right: 5px;
     p {
-      margin-top: 0;
+      margin-top: 10px;
       margin-bottom: 10px;
     }
   }
