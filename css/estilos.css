@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
 h1 {
   color: #051367;
   font-weight: bold;
@@ -11,6 +14,7 @@ h1 {
 
 p {
   color: #051367;
+  font-size: 1.3rem;
   font-weight: 300; }
 
 h2 {
@@ -77,9 +81,11 @@ span {
 @media screen and (max-width: 850px) {
   .Principal {
     padding: 10px;
-    font-size: larger; }
+    font-size: 1.8rem; }
   h2 {
     font-size: 1.35rem; }
+  p {
+    font-size: 1.2rem; }
   section {
     margin: 15px;
     text-align: justify; }
@@ -94,77 +100,50 @@ span {
     padding: 5%;
     margin-bottom: 15px; }
     .Tarjeta img, .Educativa img, .Laboral img {
-      width: 100%; } }
+      width: 100%; }
+  h2 {
+    font-size: 1.2rem; }
+  p {
+    font-size: 1rem; } }
 
-a {
-  text-decoration: none; }
+.collapse {
+  justify-content: flex-end; }
 
-.contenedor {
-  width: 100%;
-  background-color: #051367;
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas: "logo nav nav";
-  position: relative;
-  top: 0px; }
-  .contenedor .logo {
-    grid-area: logo;
-    margin: 20px; }
-    .contenedor .logo img {
-      width: 150px; }
-  .contenedor .nav {
-    grid-area: nav;
-    display: inline-block;
-    justify-self: end;
-    align-self: center;
-    left: 500px;
-    background: #051367;
-    text-align: center; }
-    .contenedor .nav .BoxNav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 0%; }
-      .contenedor .nav .BoxNav .Menu {
-        text-decoration: none;
-        text-align: center;
-        padding: 20px;
-        color: #ffffff;
-        font-size: 1.3rem;
-        font-weight: bolder; }
-        .contenedor .nav .BoxNav .Menu:hover {
-          color: #62bbff; }
-      .contenedor .nav .BoxNav .Trayectoria {
-        padding: 9.5px; }
-    .contenedor .nav li {
-      position: relative;
-      font-size: 1.4rem;
-      padding: 10px; }
+.NavAnd {
+  background-color: #051367; }
 
-@media screen and (max-width: 850px) {
-  .logo img {
-    width: 100px; }
-  .contenedor {
-    width: 100%;
-    display: grid;
-    grid-template-areas: "logo" "nav";
-    justify-items: center; }
-    .contenedor .nav {
-      display: inline-block;
-      justify-self: center;
-      align-self: center;
-      text-align: center; } }
+.navbar-brand {
+  padding-left: 1.5%; }
+
+.nav-link {
+  font-size: 1.4rem; }
+
+.navbar-nav {
+  gap: 20px; }
+  .navbar-nav .dropdown-menu {
+    font-size: 1.2rem;
+    background-color: #dff6ff; }
+    .navbar-nav .dropdown-menu .dropdown-item:hover {
+      background-color: #62bbff; }
+
+.active {
+  font-weight: 800; }
+
+.LogoAnd img {
+  width: 150px; }
 
 @media screen and (max-width: 600px) {
-  nav {
-    margin-left: 80px;
-    margin-right: 80px; } }
+  .navbar-nav {
+    text-align: center;
+    gap: 0px; }
+    .navbar-nav li {
+      text-align: center; }
+  .LogoAnd img {
+    width: 100px; } }
 
 body {
   background-color: #dff6ff;
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 1.3rem; }
+  font-family: "Red Hat Display", sans-serif; }
 
 .image_full {
   display: block;
@@ -243,6 +222,10 @@ footer {
   footer .Logo:hover {
     opacity: 1;
     transform: scale(1.2, 1.2); }
+
+@media screen and (max-width: 600px) {
+  .TextoDatos {
+    font-size: 2.3vh; } }
 
 .ContPort {
   justify-content: center;
@@ -413,7 +396,7 @@ footer {
   display: flex;
   flex-flow: column;
   background-color: #ffffff;
-  height: 300px;
+  height: 280px;
   padding: 2.5%;
   gap: 2.5%;
   border-radius: 20px;
@@ -429,7 +412,7 @@ footer {
   .CardsTray .TarjetaTray {
     grid-area: imag; }
     .CardsTray .TarjetaTray img {
-      width: 280px; }
+      width: 250px; }
   .CardsTray .SubTray {
     grid-area: subt;
     background-color: #051367;

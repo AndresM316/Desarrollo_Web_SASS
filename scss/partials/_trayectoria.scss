@@ -57,7 +57,7 @@
   display: flex;
   flex-flow: column;
   background-color: $Blanco;
-  height: 300px;
+  height: 280px;
   padding: 2.5%;
   gap: 2.5%;
   border-radius: 20px;
@@ -76,7 +76,7 @@
   .TarjetaTray {
     grid-area: imag;
     img {
-      width: 280px;
+      width: 250px;
     }
   }
   .SubTray {

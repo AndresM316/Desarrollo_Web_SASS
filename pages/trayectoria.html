@@ -16,28 +16,37 @@
 <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <div class="contenedor">
-        <header class="logo">
-            <a href="../index.html"><img src="../pages/img/Logo And.png" alt="Logo" title="Logo Andres Moreno" class="LogoAnd">
-        </header>
-        <nav class="nav">
-            <div class="BoxNav">
-                <a href="../index.html" class="Menu Home">Home</a>
-                <a href="../pages/portafolio.html" class="Menu Portafolio">Portafolio</a>
-                <div class="btn-group Menu Trayectoria">
-                  <a href="../pages/trayectoria.html" type="button" class="btn Menu Trayectoria">Trayectoria</a>
-                  <button type="button" class="btn dropdown-toggle dropdown-toggle-split Menu Trayectoria" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="visually-hidden">Toggle Dropdown</span>
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-end">
+    <nav class="navbar navbar-expand-md navbar-dark NavAnd">
+        <div class="container-fluid">
+          <a class="navbar-brand LogoAnd" href="../index.html"><img src="../pages/img/Logo And.png" alt="Logo" title="Logo Andres Moreno"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/portafolio.html">Portafolio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Trayectoria
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../pages/trayectoria.html">Profesional</a></li>
+                    <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="../pages/trayectoria/educativa.html">Educativa</a></li>
                     <li><a class="dropdown-item" href="../pages/trayectoria/laboral.html">Laboral</a></li>
-                  </ul>
-                </div>
-                <a href="../pages/Contacto.html" class="Menu Contacto">Contacto</a>
-            </div>
-        </nav>
-      </div>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <main>
         <section class="animate__animated animate__fadeInUp">
             <h1 class="Principal animate__animated animate__fadeInUp">Trayectoria Profesional</h1>
