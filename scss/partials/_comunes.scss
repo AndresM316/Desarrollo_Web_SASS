@@ -40,6 +40,9 @@ section {
     text-align: center;
   }
 }
+main{
+  padding-top: 180px;
+}
 .Principal {
   background-color: $AzulClaro;
   margin-left: 0;
@@ -102,6 +105,9 @@ span{
   }
 }
 @media screen and (max-width: 600px) {
+  main{
+    padding-top: 130px;
+  }
   .Tarjeta {
     padding: 5%;
     margin-bottom: 15px;

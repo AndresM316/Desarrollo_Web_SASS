@@ -42,6 +42,14 @@ body {
     text-align: center;
   }
 }
+.carousel-inner img {
+  width: 100%;
+  max-width: 600px;
+}
+.carousel-inner{
+  width: 100%;
+  max-width: 600px;
+ }
 .tiempo {
   display: grid;
   grid-template-areas: "img1 img1 texto1";
@@ -67,10 +75,12 @@ body {
     grid-template-areas:
       "img1"
       "texto1";
+    justify-items: center;
   }
   .habilidad {
     grid-template-areas:
       "img2"
       "texto2";
+    justify-items: center;
   }
 }

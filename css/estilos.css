@@ -44,6 +44,9 @@ section {
   section h2 {
     text-align: center; }
 
+main {
+  padding-top: 180px; }
+
 .Principal {
   background-color: #62bbff;
   margin-left: 0;
@@ -96,6 +99,8 @@ span {
       width: 50%; } }
 
 @media screen and (max-width: 600px) {
+  main {
+    padding-top: 130px; }
   .Tarjeta, .Educativa, .Laboral {
     padding: 5%;
     margin-bottom: 15px; }
@@ -182,6 +187,14 @@ body {
     padding: 20px;
     text-align: center; }
 
+.carousel-inner img {
+  width: 100%;
+  max-width: 600px; }
+
+.carousel-inner {
+  width: 100%;
+  max-width: 600px; }
+
 .tiempo {
   display: grid;
   grid-template-areas: "img1 img1 texto1";
@@ -201,9 +214,11 @@ body {
   .acerca {
     margin: 15px; }
   .tiempo {
-    grid-template-areas: "img1" "texto1"; }
+    grid-template-areas: "img1" "texto1";
+    justify-items: center; }
   .habilidad {
-    grid-template-areas: "img2" "texto2"; } }
+    grid-template-areas: "img2" "texto2";
+    justify-items: center; } }
 
 footer {
   background-color: #051367;
@@ -211,9 +226,10 @@ footer {
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center; }
   footer .TextoDatos {
+    font-size: 2.5vh;
     font-weight: lighter; }
   footer .Iconos img {
     opacity: 0.7;
@@ -224,8 +240,13 @@ footer {
     transform: scale(1.2, 1.2); }
 
 @media screen and (max-width: 600px) {
-  .TextoDatos {
-    font-size: 2.3vh; } }
+  footer {
+    justify-content: center; }
+    footer .DatosContacto {
+      margin-bottom: 10px; }
+      footer .DatosContacto .TextoDatos {
+        font-size: 2.3vh;
+        text-align: center; } }
 
 .ContPort {
   justify-content: center;
